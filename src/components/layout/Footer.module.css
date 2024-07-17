@@ -1,0 +1,31 @@
+.footer_contatiner {
+  height: 50px;
+  background-color: rgb(185, 184, 184);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+
+  /* 메뉴바 효과 위한 설정 */
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: bottom 0.3s, opacity 0.5s;
+}
+
+.footer_contatiner.hidden {
+  bottom: -50px; /* 메뉴바 높이만큼 위로 이동 */
+  opacity: 0;
+}
+
+.footer_contatiner.visible {
+  bottom: 0;
+  opacity: 1;
+}
+.footerBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
