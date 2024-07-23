@@ -1,16 +1,22 @@
-import React, { useEffect } from 'react'
-import styles from './about.module.css'
+import React, { useEffect } from "react";
+import styles from "./about.module.css";
 
-export interface aboutProps { }
+export interface aboutProps {}
 
-const About: React.FC<aboutProps> = ({ }) => {
+const About: React.FC<aboutProps> = ({}) => {
   return (
-    <div className={styles.about_container} id='about'>
+    <div
+      className={styles.about_container}
+      id="about"
+    >
       <h1>About</h1>
       {Array.from({ length: 20 }).map((_, index) => (
-        <p key={index}>컨텐츠가 많이 있는 페이지를 만들기 위해 긴 텍스트를 추가합니다...</p>
+        <p key={index}>
+          컨텐츠가 많이 있는 페이지를 만들기 위해 긴 텍스트를 추가합니다...
+        </p>
       ))}
-    </div>)
-}
+    </div>
+  );
+};
 
 export default About;
